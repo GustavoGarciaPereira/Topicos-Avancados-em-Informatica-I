@@ -3,11 +3,15 @@
 denominador = 1
 numerador = 1000
 resultado = 0
-
+resultado = numerador/denominador
+denominador += 1
 while denominador <= 50:
-    resultado = numerador/denominador
+    
     numerador -= 3
     print("{} ",numerador)
+
+
+
     if numerador %2 != 0:
         resultado -= numerador/denominador
         print("-{}/{}".format(numerador, denominador))
